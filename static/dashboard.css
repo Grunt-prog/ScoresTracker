@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+    background-color: #ffff;
+}
+
+.pages{
+    text-decoration: none;
+    float: right;
+    padding: 7px 17px;
+    color: #2b2e4a;
+    margin-top: 15px;
+    position: relative;
+    font-size: 15px;
+}
+
+.nav-bar{
+    background-color: #f2f2f2;
+    height: 10vh;
+}
+.name{
+    text-decoration: none;
+    padding: 7px 25px;
+    color: #2b2e4a;
+    position: absolute;
+    top: 15px;
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+}
+.pages:hover{
+    color: #ee5253;
+}
+.name:hover{
+    color: #ee5253;
+}
+.image{
+    position: absolute;
+    width: 610px;
+    height: 500px;
+    left: 50px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+@keyframes textAnimation {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Apply the animation to the text */
+.animated-text {
+    position: absolute;
+    left: 900px;
+    top: 270px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.text2{
+    position: absolute;
+    left: 1005px;
+    top: 270px;
+    animation: textAnimation 1s ease-in-out 0s;
+    color:  #ee5253;
+}

@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffff;
+}
+.login{
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 860px;
+    color: black;
+    animation: textAnimation 1s ease-in-out 0s;
+    
+}
+input[type = text], input[type = password]{
+    
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    z-index: 2;
+    
+}
+.f{
+    font-weight: 400px;
+}
+
+.box1{
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    border: 1px solid black;
+    left: 800px;
+    top: 100px;
+    z-index: -1;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.styled-button {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    top: 390px;
+    left: 950px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+
+.styled-button {
+    padding: 10px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #2b2e4a;
+    transform: scale(1.1);
+}
+
+.styled-button:active {
+    background-color: #2b2e4a;
+}
+.custom-shape-divider-bottom-1685204024 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1685204024 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 121px;
+}
+
+.custom-shape-divider-bottom-1685204024 .shape-fill {
+    fill: #3852D1;
+}
+
+@keyframes textAnimation {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Apply the animation to the text */
+.animated-text {
+    position: absolute;
+    top: 200px;
+    left: 170px;
+    font-family:'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+    animation: textAnimation 1s ease-in-out infinite;
+}
+.fp{
+    position: absolute;
+    top: 350px;
+    left: 1050px;
+    font-size: 15px;
+}
+.l{
+    display: inline-block;
+    color: #ee5253;
+    text-decoration: none;
+    font-size: 14px;
+    animation: textAnimation 1s ease-in-out 0s; 
+}
+.l:hover{
+    color: #2b2e4a;
+}
+.image{
+    position: absolute;
+    height: 500px;
+    width: 650px;
+    top: -20px;
+    animation: textAnimation 1s ease-in-out 0s; 
+}
+.error{
+    position: absolute;
+    top: 350px;
+    left: 900px;
+    color:#ee5253;
+}
+.Login{
+    font-size: 100;
+    position: absolute;
+    left: 950px;
+    top: 50px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.login1{
+    position: absolute;
+    top: 17px;
+    left: 150px;
+    color: black;
+    animation: textAnimation1 1s ease-in-out 0s;
+}
+.box2{
+    position: absolute;
+    width: 450px;
+    height: 601px;
+    border: 1px solid black;
+    left: 100px;
+    top: 10px;
+    z-index: -1;
+    animation: textAnimation1 1s ease-in-out 0s;
+}
+#email{
+    font-weight: 400px;
+}
+.styled-button1 {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    top: 570px;
+    left: 148px;
+    animation: textAnimation1 1s ease-in-out 0s;
+}
+
+.styled-button1 {
+    padding: 10px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button1:hover {
+    background-color: #2b2e4a;
+    transform: scale(1.1);
+}
+
+.styled-button1:active {
+    background-color: #2b2e4a;
+}
+.title{
+    position: absolute;
+    top: 250px;
+    left : 800px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.styled-button2 {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    top: 450px;
+    left: 1070px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+
+.styled-button2 {
+    padding: 10px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button2:hover {
+    background-color: #2b2e4a;
+    transform: scale(1.1);
+}
+
+.styled-button2:active {
+    background-color: #2b2e4a;
+}
+.title2{
+    position: absolute;
+    top: 455px;
+    left : 900px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+@keyframes textAnimation1 {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+.error1{
+    position: absolute;
+    top: 580px;
+    left: 270px;
+    color:#ee5253;
+    animation: textAnimation 1s ease-in-out 0s;
+}

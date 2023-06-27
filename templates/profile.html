@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scores</title>
+    <link rel="stylesheet" href="grades.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='grades.css') }}">
+    <style>
+        canvas {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="#" class="name">Scores Tracker</a>
+            <a href="/profile" class="pages">Profile</a>
+            <a href="/grades" class="pages">Grades</a>
+            <a href="/home" class="pages">Home</a>
+        </nav>
+    </header>   
+    <div class="profile1">
+        <h1 class="account">Account Information</h1>
+        <div class="profile">
+            <h2 class="he">Name: {{name}}</h2>
+            <h2 class="he">Roll_no: {{rollno}}</h2>
+            <h2 class="he">Username: {{username}}</h2>
+            <h2 class="he">Email: {{email}}</h2>
+            <h2 class="he">Year: {{year}}</h2>
+            <h2 class="he">Sem: {{sem}}</h2>
+            <h2 class="he">Branch: {{branch}}</h2>
+        </div>
+    <div class="box"></div>
+    </div>
+    <div class="buttons">
+        <div class="change1">
+            <form action="/profile" method = 'POST'>
+                <div class="login2">
+                    <label for="name" class = "f" >old password:</label>
+                    <input type="password" placeholder = "Type your old password" name = 'password1' class = 'i1'>
+                    <br><br>
+                    <label for="name" class = "f" >new password:</label>
+                    <input type="password" placeholder = "Type your new Password" name = 'password2' class = 'i1'>
+                </div>
+                <button class="styled-button6" onclick="window.location.href = '/change2'">Change Password</button>
+            </form>
+            
+        </div>
+        <div class="box3"></div>
+        <h1 class="logout">Want to logout?</h1>
+        <button class="styled-button4" onclick="window.location.href = '/login'">Logout</button>
+    </div>
+    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Image 1" class = "image1">
+    {% if error %}
+        <h1 class = "error">{{error}}</h1>
+    {% endif %}
+</body>
+</html>

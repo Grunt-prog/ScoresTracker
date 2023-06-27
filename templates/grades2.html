@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scores</title>
+    <link rel="stylesheet" href="grades.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='grades.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="#" class="name">Scores Tracker</a>
+            <a href="/profile" class="pages">Profile</a>
+            <a href="/grades" class="pages">Grades</a>
+            <a href="/home" class="pages">Home</a>
+        </nav>
+    </header>   
+    <h2 class = "head2">Roll No: {{ session['rollno'] }}</h2>
+
+    <div class="table">
+        <div>
+            <h2 class="h2">Individual Subject Grades</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Subject</th>
+                        {% for grade in grades %}
+                        <td>{{ grade[0] }}</td>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                        <th>Grade</th>
+                        {% for grade in grades %}
+                        <td>{{ grade[1] }}</td>
+                        {% endfor %}
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <h2 class="sem_score">Sem{{session['semester']}} Grade: {{gp}}</h2>    
+    <h2 class="gpa_graph" class = "h2">Gpa Graph For All Sems</h2>
+    <canvas id="myChart" class="chart" style="height: 10px; width: 60px;"></canvas>
+        <script>
+
+            // Extract the relevant data from the chartData object
+            // Create the chart
+            const chartContainer = document.getElementById('myChart');
+            new Chart(chartContainer, {
+                type: 'line',
+                data: {
+                    labels: JSON.parse('{{X_values}}'),
+                    datasets: [{
+                        label: '{{name}}',
+                        data: JSON.parse('{{Y_values}}'),
+                        borderColor: 'blue',
+                        fill: false
+                    }]
+                },
+                options: {
+                    responsive: true
+                }
+            });
+        </script>
+
+</body>
+</html>

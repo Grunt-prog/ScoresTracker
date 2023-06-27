@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+    <h1 class = "title">Scores Tracker</h1> 
+    <div class="register">
+        <form action="/" method = "POST">
+            <div class="login1">
+                <label for="name" class = "f"  >Name:</label>
+                <input type="text" name = 'name' placeholder="Your name" class = 'i'>
+                <br><br>
+                <label for="name" class = "f"  >Username:</label>
+                <input type="text" name = 'username' placeholder="Pick a username" class = 'i'>
+                <br><br>
+                <label for="name" class = "f"  >RollNo:</label>
+                <input type="text" name = 'rollno' placeholder="Your rollno" class = 'i'>
+                <br><br>
+                <label for="name" class = "f" placeholder="Your email" id = "email">Email:</label>
+                <input type="text" name = 'email' placeholder="Your email" class = 'i' id = "email1">
+                <br><br>
+                <label for="text" class = "f" >Password:</label>
+                <input type="password" name = 'password' placeholder="Password" class = 'i'>
+                <br><br>
+                <label for="text" class = "f" >Re-type Password:</label>
+                <input type="password" name = 're-password' placeholder = "Retype your password" class = 'i'>
+            </div>
+            <div class="box2"></div>
+            <button class="styled-button1" onclick="window.location.href = '/login'">Register</button>
+            
+        </form>
+        {% if error %}
+            <p class = "error1">{{ error }}</p>
+        {% endif %}
+    </div>
+        <button class="styled-button2" onclick="window.location.href = '/login'">Login</button>
+        <h2 class = "title2">Already a user?</h2>
+</body>
+</html>

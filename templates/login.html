@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scores</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% if error %}
+    <p class = "error">{{ error }}</p>
+    {% endif %}
+    <h1 class = "Login">Login</h1>
+    <form action="/login" method = 'POST'>
+        <div class="login">
+            <label for="name" class = "f" >Username:</label>
+            <input type="text" name = 'username'class = 'i'>
+            <br><br>
+            <label for="text" class = "f" >Password:</label>
+            <input type="password" name = 'password'class = 'i'>
+            
+        </div>
+        <div class="box1"></div>
+
+        <button class="styled-button">Login</button>
+    </form>
+    <div>
+        <img src="{{ url_for('static', filename='images/pik.jpg') }}" alt="Image 1" class = "image">
+
+    </div>
+</body>
+</html>

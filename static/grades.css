@@ -1,0 +1,471 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+    background-color: #ffff;
+}
+
+.pages{
+    text-decoration: none;
+    float: right;
+    padding: 7px 17px;
+    color: #2b2e4a;
+    margin-top: 15px;
+    position: relative;
+    font-size: 15px;
+}
+
+.nav-bar{
+    background-color: #f2f2f2;
+    height: 10vh;
+}
+@keyframes textAnimation {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.name{
+    text-decoration: none;
+    padding: 7px 25px;
+    color: #2b2e4a;
+    position: absolute;
+    top: 15px;
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.pages:hover{
+    color: #ee5253;
+}
+.name:hover{
+    color: #ee5253;
+}
+
+
+.f1{
+    position: absolute;
+    top: 90px;
+    left: 130px;
+    color: black;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.styled-button {
+    position: absolute;
+    padding: 5px 10px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    top: 95px;
+    left: 350px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+input[type = text]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    z-index: 2;
+    height: 10px;
+}
+.styled-button:hover {
+    background-color: #2b2e4a;
+    transform: scale(1.1);
+}
+.head2{
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.sem{
+    position: absolute;
+    left: 1050px;
+    top: 90px
+}
+#sem1{
+    position: absolute;
+    top: -20px;
+    left: -200px;
+    font-size: 10px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+#sem2{
+    position: absolute;
+    top: -15px;
+    left: -100px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.styled-button {
+    padding: 10px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #2b2e4a;
+    transform: scale(1.1);
+}
+
+.styled-button:active {
+    background-color: #2b2e4a;
+}
+.styled-button {
+    position: absolute;
+    padding: 5px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    top: 86px;
+    left: 1156px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.login{
+    position: absolute;
+    top: 80px;
+    left: 870px;
+}
+.styled-button1{
+    position: absolute;
+    padding: 5px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    top: -10px;
+    left: 120px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.styled-button1 {
+    padding: 5px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button1:hover {
+    background-color: #2b2e4a;
+    transform: scale(1.1);
+}
+
+.styled-button1:active {
+    background-color: #2b2e4a;
+}
+.table{
+    position: absolute;
+    top: 100px;
+    left: 500px;
+}
+.gpa{
+    position: absolute;
+    top: 150px; 
+    left: 850px;
+}
+table {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th:last-child, td:last-child {
+    border-right: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+}
+#myChart{
+    position: relative;
+    top:340px;
+    height: 10px;
+    width: 60px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.gpa_graph{
+    position: absolute;
+    top: 350px;
+    left: 500px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.h2{
+    animation: textAnimation 1s ease-in-out 0s;
+}
+
+
+table {
+    display: inline-table;
+  }
+
+  td {
+    padding: 10px;
+    border: 1px solid black;
+  }
+table{
+    position: absolute;
+    left: -100px;
+}
+.sem_score{
+    position: absolute;
+    top: 280px;
+    left: 500px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.f{
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.i{
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.he{
+    font-size: 20px;
+    z-index: 1;
+}
+.profile2{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    z-index: 2;
+    top: 150px;
+    left: 300px;
+}
+.profile{
+    position: absolute;
+    top: 150px;
+    left: 330px;
+}
+.styled-button3{
+    position: absolute;
+    padding: 5px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    top: 200px;
+    left: 500px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.styled-button3 {
+    padding: 5px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button3:hover {
+    background-color: #2b2e4a;
+    transform: scale(1.1);
+}
+.account{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+.profile{
+    top: 270px;
+    left: 100px;
+}
+.box{
+    position: absolute;
+    height: 370px;
+    width: 350px;
+    border: 2px solid black;
+    top: 210px;
+    left: 80px;
+}
+.profile1{
+    position: absolute;
+    width: 100%;
+    top: -50px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.styled-button4 {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    top: 500px;
+    left: 970px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+
+.styled-button4 {
+    padding: 10px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button4:hover {
+    background-color: #2b2e4a;
+    transform: scale(1.1);
+}
+
+.styled-button4:active {
+    background-color: #2b2e4a;
+}
+.logout{
+    font-size: 20px;
+    position: absolute;
+    top: 495px;
+    left: 800px;
+    font-weight: 100;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.styled-button5 {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    top: 300px;
+    left: 970px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+
+.styled-button5 {
+    padding: 10px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button5:hover {
+    background-color: #2b2e4a;
+    transform: scale(1.1);
+}
+
+.styled-button5:active {
+    background-color: #2b2e4a;
+}
+.change{
+    font-size: 20px;
+    position: absolute;
+    top: 295px;
+    left: 775px;
+    font-weight: 100;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.buttons{
+    position: absolute;
+    width: 100%;
+    top: -20px;
+}
+.i1{
+    width: 200px;
+    padding: 12px 12px 12px 12px;
+}
+.styled-button6 {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    top: 330px;
+    left: 480px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+
+.styled-button6 {
+    padding: 10px 20px;
+    background-color: #ee5253;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button6:hover {
+    background-color: #2b2e4a;
+    transform: scale(1.1);
+}
+
+.styled-button6:active {
+    background-color: #2b2e4a;
+}
+.login2{
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.box3{
+    position: absolute;
+    height: 250px;
+    width: 360px;
+    border: 2px solid black;
+    top: 180px;
+    left: 780px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.change1{
+    position: absolute;
+    left: 390px;
+    top: -10px;
+    width: 60%;
+    z-index: 1;
+}
+.image1{
+    position: absolute;
+    height: 350px;
+    width: 300px;
+    left: 450px;
+    top: 150px;
+    animation: textAnimation 1s ease-in-out 0s;
+}
+.error{
+    position: absolute;
+    color: #ee5253;
+    top: 350px;
+    left: 800px;
+    font-size: 20px;
+    animation: textAnimation 1s ease-in-out 0s;
+}

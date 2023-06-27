@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scores</title>
+    <link rel="stylesheet" href="grades.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='grades.css') }}">
+    <style>
+        canvas {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="#" class="name">Scores Tracker</a>
+            <a href="/profile" class="pages">Profile</a>
+            <a href="/grades" class="pages">Grades</a>
+            <a href="/home" class="pages">Home</a>
+        </nav>
+    </header>   
+    <h2 class = "head2">Roll No: {{ session['rollno'] }}</h2>
+
+    <form action="/grades" method = 'POST'>
+        <div class="login">
+            <label for="name" class = "f"  >Semester</label>
+            <input type="text" name = 'semester'class = 'i'>
+        </div>
+        <div class="box1"></div>
+        <button class="styled-button">Submit</button>
+    </form>
+</body>
+</html>
