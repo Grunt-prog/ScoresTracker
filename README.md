@@ -41,21 +41,9 @@ Before you can run the application, make sure you have the following dependencie
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/yourusername/your-repo.git
+    git clone https://github.com/Grunt-prog/ScoresTracker.git
     ```
 
-2. Create a virtual environment and activate it:
-
-    ```bash
-    python -m venv venv
-    source venv/bin/activate   # On Windows, use venv\Scripts\activate
-    ```
-
-3. Install the required Python packages:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
 
 ## **Usage**
 
