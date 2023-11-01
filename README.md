@@ -10,11 +10,6 @@ This is a Flask web application that provides a user management system and allow
   - [**Prerequisites**](#prerequisites)
   - [**Installation**](#installation)
 - [**Usage**](#usage)
-- [**Database Setup**](#database-setup)
-- [**User Management**](#user-management)
-- [**Data Visualization**](#data-visualization)
-- [**Contributing**](#contributing)
-- [**License**](#license)
 
 ## **Features**
 
