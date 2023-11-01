@@ -46,7 +46,7 @@ To start the Flask application, run the following command:
 
 ```bash
 python app.py
-
+```
 
 <img width="298" alt="image" src="https://github.com/Grunt-prog/ScoresTracker/assets/86661317/28e271c5-602b-47bd-a18b-127db484dd7a">
 
